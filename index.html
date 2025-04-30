@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Processos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Simulador de Escalonamento e Memória</h1>
+
+    <label for="qtdProcessos">Quantidade de Processos:</label>
+    <input type="number" id="qtdProcessos" min="1" />
+
+    <label for="escalonamento">Tipo de Escalonamento:</label>
+    <select id="escalonamento">
+      <option value="FCFS">FCFS (First Come First Serve)</option>
+      <option value="SJF">SJF (Shortest Job First)</option>
+      <option value="RR">Round Robin</option>
+    </select>
+
+    <label for="memoria">Técnica de Memória:</label>
+    <select id="memoria">
+      <option value="segmentacao">Segmentação</option>
+      <option value="paginacao">Paginação</option>
+    </select>
+
+    <button>Simular</button>
+
+    <div id="resultado"></div>
+  </div>
+</body>
+</html>
